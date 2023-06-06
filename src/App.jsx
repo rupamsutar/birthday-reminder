@@ -7,11 +7,16 @@ const App = () => {
 
   console.log(people)
 
-  return(
+  return (
     <main>
-      <h3>{people.length} Birthdays today !</h3>
-      <List people={people} />
+      <section className="container">
+        <h3>{people.length} Birthdays today !</h3>
+        <List people={people} />
+      <button className="btn btn-block" type="button" onClick={() => setPeople([])}>
+        clear list
+      </button>
+      </section>
     </main>
-  )
+  );
 };
 export default App;
