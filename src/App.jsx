@@ -2,7 +2,9 @@ import { useState } from "react";
 import data from "./data"
 
 const App = () => {
-  useState(data);
+  const [people, setPeople] =  useState(data);
+
+  console.log(people)
 
   return(
     <>
