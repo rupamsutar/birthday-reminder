@@ -1,5 +1,6 @@
 import { useState } from "react";
 import data from "./data"
+import List from "./List";
 
 const App = () => {
   const [people, setPeople] =  useState(data);
@@ -7,9 +8,10 @@ const App = () => {
   console.log(people)
 
   return(
-    <>
-    <h2>Birthday reminder</h2>
-    </>
+    <main>
+      <h3>{people.length} Birthdays today !</h3>
+      <List people={people} />
+    </main>
   )
 };
 export default App;
