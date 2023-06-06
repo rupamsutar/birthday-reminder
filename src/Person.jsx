@@ -2,7 +2,7 @@ import React from 'react'
 
 const Person = ({image, name, age}) => {
   return (
-    <article>
+    <article className='person'>
         <img src={image} alt={name} className='img'></img>
         <div>
             <h4>{name}</h4>
